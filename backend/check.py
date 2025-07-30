@@ -2,8 +2,8 @@ from fastapi import FastAPI, Depends, HTTPException
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from sqlalchemy.orm import Session
 from pydantic import BaseModel
-from backend.auth import verify_password, get_password_hash, create_access_token
-from backend.model import (
+from auth import verify_password, get_password_hash, create_access_token
+from model import (
     analyze_sentiment, SentimentEntry, User, LoginEvent,
     Base, current_ist_time
 )
@@ -11,12 +11,10 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from fastapi.middleware.cors import CORSMiddleware
 from jose import JWTError, jwt
-from backend.auth import SECRET_KEY, ALGORITHM
 import os
 import logging
 from fastapi import Form
-
-
+from auth import SECRET_KEY, ALGORITHM
 # -------------------- Logging Setup --------------------
 LOG_DIR = "logs"
 LOG_FILE = "app.log"
@@ -41,7 +39,9 @@ logger.addHandler(console_handler)
 logger.addHandler(file_handler)
 
 # -------------------- Database Setup --------------------
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:local19@localhost:5432/sentimentdb")
+from Secrets import USERNAME, PASSWORD, DBNAME, PORT
+URL = f"postgresql://{USERNAME}:{PASSWORD}@host.docker.internal:{PORT}/{DBNAME}"
+DATABASE_URL = os.getenv("DATABASE_URL", URL)
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(bind=engine)
 
