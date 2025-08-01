@@ -41,6 +41,7 @@ class User(Base):
     __tablename__ = 'users'
     id = Column(Integer, primary_key=True, index=True)
     username = Column(String, unique=True, index=True, nullable=False)
+    role = Column(String, default='USER', nullable=False)  # default role is 'user'
     hashed_password = Column(String, nullable=False)
     registered_at = Column(DateTime, default=current_ist_time)
     last_login = Column(DateTime, nullable=True)

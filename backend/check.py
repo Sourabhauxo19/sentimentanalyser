@@ -40,7 +40,8 @@ logger.addHandler(file_handler)
 
 # -------------------- Database Setup --------------------
 from Secrets import USERNAME, PASSWORD, DBNAME, PORT
-URL = f"postgresql://{USERNAME}:{PASSWORD}@host.docker.internal:{PORT}/{DBNAME}"
+host = "host.docker.internal" if os.getenv("DOCKER_ENV") else "localhost"
+URL = f"postgresql://{USERNAME}:{PASSWORD}@{host}:{PORT}/{DBNAME}"
 DATABASE_URL = os.getenv("DATABASE_URL", URL)
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(bind=engine)
@@ -113,7 +114,8 @@ def login(form: OAuth2PasswordRequestForm = Depends(), db: Session = Depends(get
         return {
             "access_token": token,
             "token_type": "bearer",
-            "last_login": now.isoformat()
+            "last_login": now.isoformat(),
+            "role": user.role
         }
 
     except HTTPException as e:
@@ -184,3 +186,22 @@ def chat_history(username: str, db: Session = Depends(get_db)):
     except Exception as e:
         logger.error(f"Chat history error for {username}: {e}")
         raise HTTPException(status_code=500, detail="Could not fetch chat history")
+
+@app.get("/admin/all-users-sentiments")
+def all_users_sentiments(token: str = Depends(oauth2_scheme), db: Session = Depends(get_db)):
+    # Check if the requester is admin
+    payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+    username = payload.get("sub")
+    user = db.query(User).filter(User.username == username).first()
+    if not user or user.role != "ADMIN":
+        raise HTTPException(status_code=403, detail="Admin access required")
+
+    # Get all users
+    users = db.query(User).all()
+    result = {}
+    for u in users:
+        sentiments = db.query(SentimentEntry).filter(SentimentEntry.user_id == u.id).all()
+        result[u.username] = {
+            s.text: s.sentiment for s in sentiments
+        }
+    return result

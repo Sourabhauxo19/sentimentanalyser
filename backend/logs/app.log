@@ -1,0 +1,25 @@
+2025-08-01 12:48:07,575 - ERROR - DB Table creation failed: (psycopg2.OperationalError) connection to server at "host.docker.internal" (10.2.194.36), port 5432 failed: Connection timed out (0x0000274C/10060)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-01 12:49:27,836 - ERROR - Unexpected login error: (psycopg2.OperationalError) connection to server at "host.docker.internal" (10.2.194.36), port 5432 failed: Connection timed out (0x0000274C/10060)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-01 12:52:34,201 - INFO - User logged in: pop
+2025-08-01 12:57:08,364 - INFO - User logged in: pop
+2025-08-01 12:59:05,975 - INFO - User logged in: pop
+2025-08-01 12:59:56,779 - INFO - User logged in: pop
+2025-08-01 13:00:51,826 - INFO - User logged in: pop
+2025-08-01 13:02:02,820 - INFO - User logged in: pop
+2025-08-01 13:08:32,958 - INFO - User logged in: pop
+2025-08-01 13:09:30,064 - INFO - User logged in: pop
+2025-08-01 13:36:13,062 - INFO - User logged in: pop
+2025-08-01 14:55:09,879 - INFO - User logged in: pop
+2025-08-01 15:00:38,943 - INFO - User registered: hop
+2025-08-01 15:00:46,669 - INFO - User logged in: hop
+2025-08-01 15:01:23,708 - INFO - Sentiment entry added for hop
+2025-08-01 15:01:37,981 - INFO - Sentiment entry added for hop
+2025-08-01 15:01:49,033 - INFO - Sentiment entry added for hop
+2025-08-01 15:06:27,250 - INFO - User logged in: pop
+2025-08-01 15:13:06,565 - INFO - Sentiment entry added for pop
