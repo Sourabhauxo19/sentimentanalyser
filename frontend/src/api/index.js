@@ -37,3 +37,10 @@ export const getSentimentEntries = async (username) => {
     const response = await axios.get(`${API_URL}/chat-history/${username}`);
     return response.data;
 };
+
+export const getAllUsersSentiments = async (token) => {
+  const response = await axios.get(`${API_URL}/admin/all-users-sentiments`, {
+    headers: { Authorization: `Bearer ${token}` }
+  });
+  return response.data;
+};
