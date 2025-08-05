@@ -1,0 +1,148 @@
+/* Home.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.home-container {
+  min-height: 100vh;
+  background: linear-gradient(to right, #dfe9f3, #ffffff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+  transition: background 0.3s ease;
+}
+
+.home-content {
+  text-align: center;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s ease-in-out;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.home-title {
+  font-size: 3rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.home-subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 40px;
+  transition: color 0.3s ease;
+}
+
+.link-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.home-button {
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+}
+
+.home-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.home-button.outline {
+  background-color: transparent;
+  color: #3498db;
+  border: 2px solid #3498db;
+}
+
+.home-button.outline:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.dark-mode-toggle {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 10px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.dark-mode .dark-mode-toggle {
+  color: #fff;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  background: #121212;
+  color: #eee;
+}
+
+body.dark-mode .home-container {
+  background: #121212;
+}
+
+body.dark-mode .home-content {
+  background: rgba(30, 30, 30, 0.95);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .home-title {
+  color: #f1f1f1;
+}
+
+body.dark-mode .home-subtitle {
+  color: #bbb;
+}
+
+body.dark-mode .home-button {
+  background-color: #1e90ff;
+  color: #fff;
+}
+
+body.dark-mode .home-button.outline {
+  background: transparent;
+  color: #1e90ff;
+  border-color: #1e90ff;
+}
+
+body.dark-mode .home-button.outline:hover {
+  background: #1e90ff;
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

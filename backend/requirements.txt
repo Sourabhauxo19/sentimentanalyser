@@ -1,0 +1,10 @@
+fastapi
+sqlalchemy
+uvicorn
+transformers
+passlib[bcrypt]
+pytz
+python-jose
+psycopg2-binary
+torch
+python-multipart

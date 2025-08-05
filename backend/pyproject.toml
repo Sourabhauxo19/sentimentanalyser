@@ -1,0 +1,26 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "rajatgarg2004",email = "rajatgarg2004@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi (>=0.116.1,<0.117.0)",
+    "sqlalchemy (>=2.0.42,<3.0.0)",
+    "uvicorn (>=0.35.0,<0.36.0)",
+    "transformers (>=4.54.1,<5.0.0)",
+    "passlib[bcrypt] (>=1.7.4,<2.0.0)",
+    "pytz (>=2025.2,<2026.0)",
+    "python-jose (>=3.5.0,<4.0.0)",
+    "psycopg2-binary (>=2.9.10,<3.0.0)",
+    "torch (>=2.7.1,<3.0.0)",
+    "python-multipart (>=0.0.20,<0.0.21)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

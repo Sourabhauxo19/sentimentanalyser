@@ -1,0 +1,200 @@
+2025-08-01 12:48:07,575 - ERROR - DB Table creation failed: (psycopg2.OperationalError) connection to server at "host.docker.internal" (10.2.194.36), port 5432 failed: Connection timed out (0x0000274C/10060)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-01 12:49:27,836 - ERROR - Unexpected login error: (psycopg2.OperationalError) connection to server at "host.docker.internal" (10.2.194.36), port 5432 failed: Connection timed out (0x0000274C/10060)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-08-01 12:52:34,201 - INFO - User logged in: pop
+2025-08-01 12:57:08,364 - INFO - User logged in: pop
+2025-08-01 12:59:05,975 - INFO - User logged in: pop
+2025-08-01 12:59:56,779 - INFO - User logged in: pop
+2025-08-01 13:00:51,826 - INFO - User logged in: pop
+2025-08-01 13:02:02,820 - INFO - User logged in: pop
+2025-08-01 13:08:32,958 - INFO - User logged in: pop
+2025-08-01 13:09:30,064 - INFO - User logged in: pop
+2025-08-01 13:36:13,062 - INFO - User logged in: pop
+2025-08-01 14:55:09,879 - INFO - User logged in: pop
+2025-08-01 15:00:38,943 - INFO - User registered: hop
+2025-08-01 15:00:46,669 - INFO - User logged in: hop
+2025-08-01 15:01:23,708 - INFO - Sentiment entry added for hop
+2025-08-01 15:01:37,981 - INFO - Sentiment entry added for hop
+2025-08-01 15:01:49,033 - INFO - Sentiment entry added for hop
+2025-08-01 15:06:27,250 - INFO - User logged in: pop
+2025-08-01 15:13:06,565 - INFO - Sentiment entry added for pop
+2025-08-04 23:49:53,234 - ERROR - Unexpected login error: (psycopg2.errors.UndefinedColumn) column users.email does not exist
+LINE 1: SELECT users.id AS users_id, users.email AS users_usernam...
+                                     ^
+
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.role AS users_role, users.hashed_password AS users_hashed_password, users.registered_at AS users_registered_at, users.last_login AS users_last_login 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'rajatgarg2004@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-04 23:50:15,672 - ERROR - Unexpected login error: (psycopg2.errors.UndefinedColumn) column users.email does not exist
+LINE 1: SELECT users.id AS users_id, users.email AS users_usernam...
+                                     ^
+
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.role AS users_role, users.hashed_password AS users_hashed_password, users.registered_at AS users_registered_at, users.last_login AS users_last_login 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'rajatgarg2004@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-04 23:52:23,626 - ERROR - Unexpected login error: (psycopg2.errors.UndefinedColumn) column users.email does not exist
+LINE 1: SELECT users.id AS users_id, users.email AS users_usernam...
+                                     ^
+
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.role AS users_role, users.hashed_password AS users_hashed_password, users.registered_at AS users_registered_at, users.last_login AS users_last_login 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'rajatgarg2004@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-04 23:52:39,546 - ERROR - Unexpected login error: (psycopg2.errors.UndefinedColumn) column users.email does not exist
+LINE 1: SELECT users.id AS users_id, users.email AS users_usernam...
+                                     ^
+
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.role AS users_role, users.hashed_password AS users_hashed_password, users.registered_at AS users_registered_at, users.last_login AS users_last_login 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'rajatgarg2004@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-04 23:54:26,436 - ERROR - Unexpected login error: (psycopg2.errors.UndefinedColumn) column users.email does not exist
+LINE 1: SELECT users.id AS users_id, users.email AS users_usernam...
+                                     ^
+
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.role AS users_role, users.hashed_password AS users_hashed_password, users.registered_at AS users_registered_at, users.last_login AS users_last_login 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'rajatgarg2004@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-04 23:55:22,765 - ERROR - Unexpected login error: (psycopg2.errors.UndefinedColumn) column users.email does not exist
+LINE 1: SELECT users.id AS users_id, users.email AS users_usernam...
+                                     ^
+
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.role AS users_role, users.hashed_password AS users_hashed_password, users.registered_at AS users_registered_at, users.last_login AS users_last_login 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'rajatgarg2004@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-04 23:56:39,561 - ERROR - Unexpected login error: type object 'User' has no attribute 'email'
+2025-08-04 23:57:11,877 - ERROR - Unexpected login error: (psycopg2.errors.UndefinedColumn) column users.role does not exist
+LINE 1: ...users.id AS users_id, users.email AS users_email, users.role...
+                                                             ^
+
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.role AS users_role, users.hashed_password AS users_hashed_password, users.registered_at AS users_registered_at, users.last_login AS users_last_login 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'rajatgarg2004@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-05 00:14:28,082 - INFO - Database tables created successfully
+2025-08-05 00:14:28,098 - INFO - Starting Sentiment Analyzer API...
+2025-08-05 00:14:28,098 - ERROR - Database connection failed on startup: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-08-05 00:14:33,212 - ERROR - Health check failed: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-08-05 00:14:52,930 - INFO - Database tables created successfully
+2025-08-05 00:14:52,938 - INFO - Starting Sentiment Analyzer API...
+2025-08-05 00:14:52,938 - ERROR - Database connection failed on startup: Textual SQL expression 'SELECT 1' should be explicitly declared as text('SELECT 1')
+2025-08-05 00:15:07,849 - INFO - Database tables created successfully
+2025-08-05 00:15:07,862 - INFO - Starting Sentiment Analyzer API...
+2025-08-05 00:15:07,863 - ERROR - Database connection failed on startup: name 'text' is not defined
+2025-08-05 00:15:16,191 - INFO - Database tables created successfully
+2025-08-05 00:15:16,201 - INFO - Starting Sentiment Analyzer API...
+2025-08-05 00:15:16,202 - ERROR - Database connection failed on startup: name 'text' is not defined
+2025-08-05 00:15:25,914 - INFO - Database tables created successfully
+2025-08-05 00:15:25,927 - INFO - Starting Sentiment Analyzer API...
+2025-08-05 00:15:25,929 - INFO - Database connection established
+2025-08-05 00:16:53,148 - ERROR - Database connection error: (psycopg2.errors.UndefinedColumn) column users.email does not exist
+LINE 1: SELECT users.id AS users_id, users.email AS users_email, use...
+                                     ^
+
+[SQL: SELECT users.id AS users_id, users.email AS users_email, users.role AS users_role, users.hashed_password AS users_hashed_password, users.registered_at AS users_registered_at, users.last_login AS users_last_login 
+FROM users 
+WHERE users.email = %(email_1)s 
+ LIMIT %(param_1)s]
+[parameters: {'email_1': 'rajatgarg2004@gmail.com', 'param_1': 1}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2025-08-05 00:17:48,570 - INFO - Database tables created successfully
+2025-08-05 00:17:48,579 - INFO - Starting Sentiment Analyzer API...
+2025-08-05 00:17:48,580 - INFO - Database connection established
+2025-08-05 00:18:16,911 - INFO - Database tables created successfully
+2025-08-05 00:18:16,927 - INFO - Starting Sentiment Analyzer API...
+2025-08-05 00:18:16,928 - INFO - Database connection established
+2025-08-05 00:19:23,038 - INFO - User registered: rajatgarg2004@gmail.com
+2025-08-05 00:22:00,061 - INFO - Database tables created successfully
+2025-08-05 00:22:00,072 - INFO - Starting Sentiment Analyzer API...
+2025-08-05 00:22:00,073 - INFO - Database connection established
+2025-08-05 00:22:09,298 - INFO - Database tables created successfully
+2025-08-05 00:22:09,311 - INFO - Starting Sentiment Analyzer API...
+2025-08-05 00:22:09,313 - INFO - Database connection established
+2025-08-05 00:22:17,905 - INFO - Database tables created successfully
+2025-08-05 00:22:17,917 - INFO - Starting Sentiment Analyzer API...
+2025-08-05 00:22:17,918 - INFO - Database connection established
+2025-08-05 00:22:26,088 - INFO - Database tables created successfully
+2025-08-05 00:22:26,097 - INFO - Starting Sentiment Analyzer API...
+2025-08-05 00:22:26,098 - INFO - Database connection established
+2025-08-05 00:22:54,737 - INFO - Database tables created successfully
+2025-08-05 00:22:54,746 - INFO - Starting Sentiment Analyzer API...
+2025-08-05 00:22:54,747 - INFO - Database connection established
+2025-08-05 00:23:39,217 - INFO - User registered: test@example.com
+2025-08-05 00:23:41,254 - INFO - Login attempt for email: test@example.com
+2025-08-05 00:23:41,652 - INFO - User logged in: test@example.com
+2025-08-05 00:23:44,104 - INFO - User logged in: test@example.com
+2025-08-05 00:24:06,408 - INFO - Database tables created successfully
+2025-08-05 00:24:06,423 - INFO - Starting Sentiment Analyzer API...
+2025-08-05 00:24:06,425 - INFO - Database connection established
+2025-08-05 00:30:00,044 - INFO - Login attempt for email: rajatgarg2004@gmail.com
+2025-08-05 00:30:00,763 - INFO - User logged in: rajatgarg2004@gmail.com
+2025-08-05 00:34:53,110 - INFO - Database tables created successfully
+2025-08-05 00:34:53,119 - INFO - Starting Sentiment Analyzer API...
+2025-08-05 00:34:53,121 - INFO - Database connection established
+2025-08-05 00:35:08,893 - INFO - Login attempt for email: rajatgarg2004@gmail.com
+2025-08-05 00:35:09,612 - INFO - User logged in: rajatgarg2004@gmail.com
+2025-08-05 00:35:32,744 - INFO - Login attempt for email: rajatgarg2004@gmail.com
+2025-08-05 00:35:33,288 - INFO - User logged in: rajatgarg2004@gmail.com
+2025-08-05 00:43:05,961 - INFO - Login attempt for email: rajatgarg2004@gmail.com
+2025-08-05 00:43:06,505 - INFO - User logged in: rajatgarg2004@gmail.com
+2025-08-05 00:43:18,935 - INFO - Sentiment entry added for rajatgarg2004@gmail.com
+2025-08-05 00:43:26,129 - INFO - Sentiment entry added for rajatgarg2004@gmail.com
+2025-08-05 00:43:31,125 - INFO - Sentiment entry added for rajatgarg2004@gmail.com
+2025-08-05 00:43:41,216 - INFO - Sentiment entry added for rajatgarg2004@gmail.com
+2025-08-05 00:44:41,452 - INFO - Database tables created successfully
+2025-08-05 00:44:41,466 - INFO - Starting Sentiment Analyzer API...
+2025-08-05 00:44:41,467 - INFO - Database connection established
+2025-08-05 00:44:50,214 - INFO - Database tables created successfully
+2025-08-05 00:44:50,222 - INFO - Starting Sentiment Analyzer API...
+2025-08-05 00:44:50,224 - INFO - Database connection established
+2025-08-05 00:49:58,108 - INFO - Database tables created successfully
+2025-08-05 00:49:58,118 - INFO - Starting Sentiment Analyzer API...
+2025-08-05 00:49:58,119 - INFO - Database connection established
+2025-08-05 00:52:26,312 - INFO - Login attempt for email: rajatgarg2004@gmail.com
+2025-08-05 00:52:27,008 - INFO - User logged in: rajatgarg2004@gmail.com
+2025-08-05 01:00:54,730 - INFO - Login attempt for email: rajatgarg2004@gmail.com
+2025-08-05 01:00:55,106 - INFO - User logged in: rajatgarg2004@gmail.com
+2025-08-05 11:25:51,807 - INFO - Database tables created successfully
+2025-08-05 11:25:51,816 - INFO - Starting Sentiment Analyzer API...
+2025-08-05 11:25:51,817 - INFO - Database connection established
+2025-08-05 11:26:04,566 - ERROR - Database connection error: Signature has expired.
+2025-08-05 11:26:07,657 - ERROR - Database connection error: Signature has expired.
+2025-08-05 11:26:17,648 - INFO - Login attempt for email: rajatgarg2004@gmail.com
+2025-08-05 11:26:18,344 - INFO - User logged in: rajatgarg2004@gmail.com
+2025-08-05 11:29:33,252 - INFO - Database tables created successfully
+2025-08-05 11:29:33,277 - INFO - Starting Sentiment Analyzer API...
+2025-08-05 11:29:33,280 - INFO - Database connection established
+2025-08-05 11:33:53,744 - INFO - Database tables created successfully
+2025-08-05 11:33:53,759 - INFO - Starting Sentiment Analyzer API...
+2025-08-05 11:33:53,761 - INFO - Database connection established
+2025-08-05 11:34:33,639 - INFO - Register attempt | IP: 127.0.0.1 | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0
+2025-08-05 11:34:33,642 - INFO - Registration failed - email exists: rajatgarg2004@gmail.com
+2025-08-05 11:34:33,644 - ERROR - Database connection error: 400: email already exists
+2025-08-05 11:34:46,272 - INFO - Register attempt | IP: 127.0.0.1 | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0
+2025-08-05 11:34:46,970 - INFO - User registered: hola@amigos.com
+2025-08-05 11:34:46,983 - INFO - Login attempt | IP: 127.0.0.1 | User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0
+2025-08-05 11:34:46,984 - INFO - Login attempt for email: hola@amigos.com
+2025-08-05 11:34:47,532 - INFO - User logged in: hola@amigos.com
